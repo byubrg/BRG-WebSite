@@ -1,0 +1,257 @@
+/* Table of Contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Component Fixes -- byu-header
+- Component Fixes -- byu-footer
+- General
+- Page Header
+- Page Header -- Home
+- Standard Body Copy
+*/
+
+/* Wordpress Admin Bar Height-Change Breakpoints
+––––––––––––––––––––––––––––––––––––––––––––––––––
+0-782       46px tall
+783-...     32px tall
+
+*/
+
+/* Component Fixes -- byu-header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a.byu-header-site-title-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Component Fixes -- byu-footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body > byu-footer {
+    /*position: absolute;*/
+    width: 100%;
+    bottom: 0px;
+}
+.shadow-footer > byu-footer {
+	visibility: inherit;
+}
+
+.shadow-footer{
+	height: 0px;
+}
+
+/* General
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+	position: relative;
+}
+.container {
+	padding: 15px;
+}
+
+/* Page Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.brand_page-header {
+	position: relative;
+}
+.brand_page-header__image-wrap {
+	line-height: 0;
+	overflow: hidden;
+	max-height: 360px;
+}
+.brand_page-header__image-wrap img {
+	width: 100%;
+}
+.brand_page-header__title-wrap {
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 15px 10% 0px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.brand_page-header__title-wrap--transparent {
+	opacity: .87;
+	background-color: #E5E5E5;
+}
+.brand_page-header__title-wrap h1 {
+	font-weight: 400;
+	letter-spacing: 5px;
+	font-size: 35px;
+	line-height: 37px;
+	margin: 0;
+	font-family: "Vitesse A", "Vitesse B";
+	color: #002E5D;
+}
+
+.brand_page-header__title-wrap h2 {
+	font-weight: 400;
+	letter-spacing: 3.5px;
+	font-size: 14px;
+	line-height: 14px;
+	margin: -17px 0px 0px 0px;
+	font-family: "Vitesse A", "Vitesse B";
+	color: #002E5D;
+	text-transform: uppercase;
+}
+
+
+
+@media (max-width: 639px) {
+	.brand_page-header__title-wrap--text {
+		position: relative;
+		visibility: visible;
+		padding: 25px 10% 8px;
+		background-color: #e5e5e5;
+		opacity: 0.87;
+	}
+}
+@media (min-width: 640px) {
+	.brand_page-header__title-wrap {
+		visibility: visible;
+	}
+	.brand_page-header__title-wrap h1 {
+		font-size: 70px;
+		line-height: 83px;
+		letter-spacing: 0px;
+	}
+	.brand_page-header {
+		margin-bottom: 20px;
+	}
+	.brand_page-header__title-wrap h2 {
+		font-size: 20px;
+		letter-spacing: 5px;
+		line-height: 3px;
+		margin: 5px 0px 0px 0px;
+	}
+
+	.brand_page-header__title-wrap--transparent {
+		opacity: .87;
+		background-color: #fff;
+	}
+
+}
+
+/* Page Header -- Home
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.brand_page-header--home {}
+.brand_page-header--home .page-header__image-wrap {
+    max-height: 450px;
+}
+
+/* Standard Body Copy
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.standard-body-copy,
+.standard-body-copy p,
+.standard-body-copy span {
+	font-family: "Gotham A", "Gotham B";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #141414;
+}
+.standard-body-copy img {
+	max-width: 100%;
+}
+.standard-body-copy h2,
+.standard-body-copy h3,
+.standard-body-copy h4,
+.standard-body-copy h5,
+.standard-body-copy h6 {
+	color: #141414;
+}
+.standard-body-copy h2 {
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 400;
+}
+.standard-body-copy h3 {
+	font-size: 20px;
+	line-height: 22px;
+    font-family: "Gotham A", "Gotham B";
+    font-style: normal;
+    font-weight: 500;
+    color: #002E5D;
+}
+.standard-body-copy h4 {
+	font-size: 18px;
+	line-height: 20px;
+	font-family: "Gotham A", "Gotham B";
+	font-style: italic;
+	font-weight: 400;
+}
+.standard-body-copy h5 {
+	font-size: 16px;
+	line-height: 18px;
+}
+.standard-body-copy h6 {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+@media (min-width: 640px) {
+	.standard-body-copy,
+	.standard-body-copy p,
+	.standard-body-copy span {
+		font-family: "Gotham A", "Gotham B";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 33px;
+		margin-bottom: 35px;
+		color: black;
+	}
+	.standard-body-copy h2 {
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.standard-body-copy h3 {
+		font-size: 28px;
+		line-height: 32px;	}
+	.standard-body-copy h4 {
+		font-size: 25px;
+		line-height: 29px;
+	}
+	.standard-body-copy h5 {
+		font-size: 22px;
+		line-height: 26px;
+	}
+	.standard-body-copy h6 {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+
+.page-content{
+	padding-bottom: 8rem;
+}
+
+/* Intro Text -- Child Pages
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro_text {
+	display: flex;
+	flex-flow: column;
+	height: inherit;
+	margin-top: 7%;
+}
+
+
+/* 404 Page
+-------------------------------------------------*/
+
+#text-404 {
+	margin: 40px 0 -30px;
+	text-transform: none;
+}
+.header404{
+	margin-top: 4rem;
+}
+.title_wrap_404{
+	line-height: 110px !important;
+}
+
+@media(min-width: 800px) {
+	.header404{
+		margin-top: 128px;
+	}
+}

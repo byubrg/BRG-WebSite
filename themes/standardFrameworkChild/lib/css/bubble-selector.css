@@ -1,0 +1,194 @@
+/* Table of Contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Bubble Selector Standard
+- Bubble Selector 2
+*/
+
+/* Breakpoints
+––––––––––––––––––––––––––––––––––––––––––––––––––
+0-374		2 columns
+375-639		6 columns
+640-1023	12 columns
+1024-1439	12 columns
+1440+		12 columns
+
+*/
+
+@media (min-width: 375px) {}
+@media (min-width: 640px) {}
+@media (min-width: 800px) {}
+@media (min-width: 1024px) {}
+@media (min-width: 1440px) {}
+
+@media (max-width: 374px) {}
+@media (max-width: 639px) {}
+@media (max-width: 799px) {}
+@media (max-width: 1023px) {}
+@media (max-width: 1439px) {}
+
+/* Wordpress Admin Bar Height-Change Breakpoints
+––––––––––––––––––––––––––––––––––––––––––––––––––
+0-782		46px tall
+783-...		32px tall
+
+*/
+
+/* Bubble Selector
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bubble-selector {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+}
+/* Text */
+.bubble-selector__item {
+	font-family: "Gotham A", "Gotham B";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1rem;
+	letter-spacing: -.015rem;
+	color: #AFAFAF;
+	display: flex;
+	text-align: center;
+	cursor: pointer;
+	width: 8rem;
+	height: 8rem;
+
+}
+.bubble-selector__bubble__not-selected span {
+	display: block;
+	margin-bottom: 15px;
+	cursor: pointer;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+.bubble-selector__bubble__not-selected:hover span {
+	font-size: 1.166666rem;
+	line-height: 1.166666rem;
+}
+.bubble-selector__bubble__selected span {
+	display: block;
+	font-size: 1.666666rem;
+	line-height: 1.666666rem;
+	letter-spacing: -.025rem;
+	color: #002E5D;
+}
+/* Bubbles */
+.bubble-selector__bubble:before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	background-color: #002E5D;
+}
+.bubble-selector__bubble__not-selected:before {
+	width: 12px;
+	height: 12px;
+	top: calc(30% - 6px);
+	left: calc(50% - 6px);
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+.bubble-selector__bubble__not-selected:hover:before {
+	width: 24px;
+	height: 24px;
+	top: calc(30% - 12px);
+	left: calc(50% - 12px);
+}
+.bubble-selector__bubble__selected:before {
+	width: 44px;
+	height: 44px;
+	top: calc(30% - 22px);
+	left: calc(50% - 22px);
+	box-shadow: -1px 2px 7px 0px rgba(0,0,0,0.49);
+}
+
+/* Bubble Selector 2
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bubble-selector .bubble-selector__2 {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	visibility: hidden;
+}
+
+
+/* Text */
+.bubble-selector__2 .bubble-selector__item {
+	justify-content: center;
+}
+.bubble-selector__2 .bubble-selector__bubble__not-selected span {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 50%;
+	margin: auto;
+
+	width: 50px;
+	height: 50px;
+	background: #E5E5E5;
+	color: #002E5D;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+.bubble-selector__2 .bubble-selector__bubble__not-selected.not-selectable span {
+	color: #E5E5E5 !important;
+	background: #FFF !important;
+	cursor: default !important;
+}
+.bubble-selector__2 .bubble-selector__bubble__not-selected.not-selectable {
+	cursor: default !important;
+}
+.bubble-selector__2 .bubble-selector__bubble__not-selected:hover span {
+	width: 50px;
+	height: 50px;
+	background: #002E5D;
+	color: #E5E5E5;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+.bubble-selector__2 .bubble-selector__bubble__selected span {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 50%;
+	margin: auto;
+
+	width: 50px;
+	height: 50px;
+	background: #002E5D;
+	color: #E5E5E5;
+	font-size: 2rem;
+	line-height: 2rem;
+
+	letter-spacing: -.025rem;
+}
+/* Bubbles */
+.bubble-selector__2 .bubble-selector__bubble:before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	background-color: #002E5D;
+}
+.bubble-selector__2 .bubble-selector__bubble__not-selected:before {
+	display: none;
+}
+.bubble-selector__2 .bubble-selector__bubble__not-selected:hover:before {
+	display: none;
+}
+.bubble-selector__2 .bubble-selector__bubble__selected:before {
+	display: none;
+}
+
+@media(min-width: 800px){
+	.bubble-selector__item {
+		width: 10rem;
+	}
+}

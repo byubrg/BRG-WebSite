@@ -1,0 +1,51 @@
+.portrait_wrapper img{
+    width: 100%;
+    display: block;
+}
+
+.person-bio{
+    font-family: "Vitesse A", "Vitesse B";
+    color: #002E5D;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.name{
+    width: 100%;
+}
+.email{
+    width: 100%;
+}
+.phone{
+    width: 100%;
+}
+.member_name{
+    position: relative;
+    height: 30px;
+    margin-top: -50px;
+    width: calc(100% - 20px);
+    font-size: 30px;
+    font-family: "Vitesse A", "Vitesse B";
+    color: #fff;
+    font-weight: 400;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.project_link{
+
+}
+.project_link:hover{
+    color: #002E5D;
+    text-decoration: underline;
+}
+.project_list_title{
+
+}
+.member_title{
+    font-family: "Vitesse A", "Vitesse B";
+    color: #002e5d;
+    font-size: 30px;
+}
